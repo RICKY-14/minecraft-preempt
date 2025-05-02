@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "true"
+      TZ: "America/Los_Angeles"
+      VERSION: "1.20.2"
+    ports:
+      - 127.0.0.1:25566:25565
